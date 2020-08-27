@@ -1,0 +1,128 @@
+
+
+.header{
+    background-color:#4267b2;
+    widows: 50px;
+    height: 85px;
+    padding: 6px;
+}
+.bt{
+    background:#14af3b;
+    color:#fff;
+    height:30px;
+    width: 100px;
+    border-color: #d3fad2;
+    margin:35px;
+    text-align: center;
+    margin-left:100px;
+    cursor:pointer;
+}
+.mainhead{
+    color:white;
+    font-size:35px;
+    font-weight: bold;
+    text-decoration:none;
+    font-family: Helvetica Neue,Arial, Helvetica, sans-serif;
+    margin-right:200px;
+}
+.mainname{
+    
+    padding-top:35px;
+}
+.leftbody{
+    width:26%;
+    float: left;
+    border: 3px outset #4267b2;
+  background-color: white; 
+  border-radius: 35px;   
+  
+}
+.rightbody{
+    width:40%;
+    float: right;
+    
+  background-color: white; 
+  border-radius: 35px;   
+}
+.quote{
+    font-weight: bold;
+    font-size: 21px;
+    text-align: justify;
+    
+}
+
+.form{
+    
+    float: left;
+}
+.text{
+    height: 30px;
+    width:  200px;
+    border-radius: 5px;
+    font-size:15px;
+    border-color:rgb(113, 173, 35);
+    border-width:2px;
+    
+    margin:15px;
+    font-weight:normal;
+}
+.label{
+    width: 100px;
+    display:inline-block;
+    text-align: right;
+    font-size:15px;
+    font-weight:bold;
+    font-family: Helvetica Neue,Arial, Helvetica, sans-serif;
+}
+.radio{
+text-align:right;
+display: inline;
+margin-left:10px;
+font-size:15px;
+font-weight:bold;
+font-family: Helvetica Neue,Arial, Helvetica, sans-serif;
+
+}
+.center{
+    margin:auto;
+    width: 50%;
+    padding:10px;
+    
+}
+h1{
+        text-align:center;
+
+    font-weight: bold;
+    font-family: Helvetica Neue,Arial, Helvetica, sans-serif;
+}
+
+th:hover,td{
+    padding:15px;
+    text-align:left;
+    background-color: #bde9ba;
+    font-weight:bold;
+}
+.bt1{
+    background:black;
+    color:#fff;
+    height:20px;
+    width: 20px;
+    border-color:red;
+    border-radius: 50%;
+    
+    text-align: center;
+    
+    cursor:pointer;
+
+
+}
+.footer{
+    color:black;
+    font-size:15px;
+    font-weight: bold;
+    font-family: Helvetica Neue,Arial, Helvetica, sans-serif;
+    float: left;
+    padding-top: 450px;
+    padding-left:20%;
+}
+
