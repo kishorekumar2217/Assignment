@@ -22,4 +22,4 @@ mvn spring-boot:run
 Click bellow for frontend:
 http://localhost:3000
 
-![](Screenshot (26).png)
+![](web/screen.png)
