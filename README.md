@@ -1,24 +1,25 @@
 # Assignment
-downnload
+downnload"
 https://github.com/kishorekumar2217/Assignment.git
 
-Open Terminal
+Open Terminal:
 cd app
 
-Install NPM Dependencies
+Install NPM Dependencies:
 npm install
 
-Start React
+Start React:
 npm start
 
-Open another Terminal
+Open another Terminal:
 cd web
 
-Start SpringBoot Project
+Start SpringBoot Project:
 mvn spring-boot:run
 
 
 
-Click bellow for frontend
+Click bellow for frontend:
 http://localhost:3000
 
+![](image/
