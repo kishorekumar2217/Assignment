@@ -13,7 +13,11 @@
         <title>React App</title>
   </head>
   <body>
-    <div id="root"></div>
+
+    <div id="root">
+      <div th:if="${message}" th:text="${message}" th:class="${'alert ' + alertClass}"/>
+
+    </div>
    
   </body>
 </html>
