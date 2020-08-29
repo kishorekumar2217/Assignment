@@ -101,18 +101,11 @@ class App extends React.Component {
               <br />
 
               <label className="label">Date of birth: </label>
-
               <input value={this.state.dob} onChange={(e) => this.setState({ dob: e.target.value })} type="date" className="text" required />
-
-
               <br />
-
-
               <label className="label">Class:</label>
-
               <select className="text" onChange={(e) => { this.setState({ cls: e.target.value }) }} value={this.state.cls} required  >
                 <option >Select class</option>
-
                 <option value="I">I</option>
                 <option value="II">II</option>
                 <option value="III">III</option>
@@ -126,12 +119,8 @@ class App extends React.Component {
                 <option value="XI">XI</option>
                 <option value="XII">XIII</option>
               </select>
-
               <br />
-
               <label className="label">Division:</label>
-
-
               <select className='text' onChange={(e) => { this.setState({ div: e.target.value }) }} value={this.state.div} required>
                 <option>Select Division</option>
                 <option value="A">A</option>
@@ -193,39 +182,12 @@ class App extends React.Component {
 
               </tbody>
             </table>
-
-
-
-
-
-
-
           </div>
-
-
           <div className="footer">
-
-
-
-
-
           </div>
-
-
-
-
-
-
         </div>
       </div>
-
-
-
-
-
     );
-
-
   }
 }
 
