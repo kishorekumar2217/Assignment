@@ -1,4 +1,4 @@
-package io.mahesh.web;
+package io.kishor.web;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 

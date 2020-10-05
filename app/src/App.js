@@ -29,7 +29,7 @@ class App extends React.Component {
         })
       })
   }
-  submit(evenet, id) {
+  submit(evenet,id) {
     console.log(id)
     evenet.preventDefault();
     if (id === 0) {
@@ -63,10 +63,16 @@ class App extends React.Component {
     }
   }
   delete(id) {
+    let cnf = window.confirm('Are you sure you want to Delete?');
+    if(cnf){
     axios.delete("http://localhost:8080/api/" + id)
       .then(() => {
         this.componentDidMount();
       })
+    }
+    else 
+     return false;
+  
   }
   edit(id) {
     axios.get("http://localhost:8080/api/" + id)
@@ -154,14 +160,15 @@ class App extends React.Component {
 
               <tbody>
                 {
-                  this.state.users.map((user, key) =>
-                    <tr key={user.id}>
+                  this.state.users.map((user) =>
+                    <tr >
                       <td>{user.name}</td>
                       <td>{user.dob}</td>
                       <td>{user.cls}</td>
                       <td>{user.div}</td>
                       <td>{user.gen}</td>
-                      <td>{++key}</td>
+                      <td>{user.rollno}</td>
+                     
 
                       <td>
                         <button onClick={(e) => this.edit(user.id)} className="bt1" type="submit" name="action">

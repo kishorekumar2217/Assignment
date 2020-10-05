@@ -22,13 +22,6 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping("/")
-    public List<User> GetUsers()
-     {
-         Sort sort=Sort.by("Name").ascending();
-        return userRepository.findAll(sort);
-    }
-
 
 
 
@@ -36,6 +29,10 @@ public class UserController {
     public User GetUser(@PathVariable String id) {
         return userRepository.findById(id).orElse(null);
     }
+
+
+
+    
     @PostMapping("/")
 
     public User postMethodName(@RequestBody User user){
@@ -67,6 +64,7 @@ public class UserController {
         oldUser.setCls(newUser.getCls());
         oldUser.setDiv(newUser.getDiv());
         oldUser.setGen(newUser.getGen());
+        userRepository.save(oldUser);
         return oldUser;
         
 
@@ -77,4 +75,12 @@ public class UserController {
         userRepository.deleteById(id);
         return id;
     }
+    
+    @GetMapping("/")
+    public List<User> GetUsers()
+     {
+         Sort sort=Sort.by("Name").ascending();
+        return userRepository.findAll(sort);
+    }
+
 }
